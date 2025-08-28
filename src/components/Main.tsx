@@ -3,6 +3,7 @@ import profile from "../assets/58c5b1fb-2a49-4c33-977e-5f083aa81523.png";
 import { ButtonsInfo } from "../models/buttonsInfo";
 import "../styles/Main.css";
 import { LangContext } from "../context/LangContext";
+import cv from "../assets/Curriculum Francisco Santamaria.pdf"
 
 export const Main = () => {
 
@@ -18,8 +19,8 @@ export const Main = () => {
         </p>
         <div className="cv-button">
           <a
-            href="../assets/Curriculum Francisco Santamaria.pdf"
-            download="Francisco Santamaría.pdf"
+            href={cv}
+            download="Francisco_Santamaría.pdf"
           >
             {langState.cvButton}
           </a>
