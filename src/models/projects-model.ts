@@ -1,7 +1,8 @@
 import projectBetterSales from '../assets/tienda-bettersales.png'
 import projectBalanceHidrico from '../assets/balance.png'
 import projectPorfolio from '../assets/portfolio.png'
-import imgDefault from '../assets/pagina-web.png'
+import projectCarrito from '../assets/Carrito Compras.png'
+/*import imgDefault from '../assets/pagina-web.png'*/
 
 export const ProjectsList:Projects[] = [
     {
@@ -29,44 +30,12 @@ export const ProjectsList:Projects[] = [
         urlGitHub: 'https://github.com/ARK7X/portfolio'
     },
     {
-        img: imgDefault,
-        title: 'Titulo del proyecto',
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        tag: [{title: 'Angular'}, {title: 'HTML'}, {title: 'CSS'}],
-        url: 'https//',
-        urlGitHub: 'https//'
-    },
-    {
-        img: imgDefault,
-        title: 'Titulo del proyecto',
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        tag: [{title: 'Angular'}, {title: 'HTML'}, {title: 'CSS'}],
-        url: 'https//',
-        urlGitHub: 'https//'
-    },
-    {
-        img: imgDefault,
-        title: 'Titulo del proyecto',
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        tag: [{title: 'Angular'}, {title: 'HTML'}, {title: 'CSS'}],
-        url: 'https//',
-        urlGitHub: 'https//'
-    },
-    {
-        img: imgDefault,
-        title: 'Titulo del proyecto',
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        tag: [{title: 'Angular'}, {title: 'HTML'}, {title: 'CSS'}],
-        url: 'https//',
-        urlGitHub: 'https//'
-    },
-    {
-        img: imgDefault,
-        title: 'Titulo del proyecto',
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        tag: [{title: 'Angular'}, {title: 'HTML'}, {title: 'CSS'}],
-        url: 'https//',
-        urlGitHub: 'https//'
+        img: projectCarrito,
+        title: 'Carrito de compras',
+        description: 'Esta página web está enfocada en un carrito de compras, permitiendo a los usuarios seleccionar, gestionar y adquirir productos de manera rápida, sencilla y segura.',
+        tag: [{title: 'React'}, {title: 'HTML'}, {title: 'CSS'}, {title: 'Bootstrap'}, {title: 'Javascript'}, {title: 'FakeStore API'}],
+        url: 'https://carritodecompraspage.netlify.app/',
+        urlGitHub: 'https://github.com/ARK7X/carrito-de-compras'
     }
 ]
 

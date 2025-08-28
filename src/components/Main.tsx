@@ -18,7 +18,7 @@ export const Main = () => {
         </p>
         <div className="cv-button">
           <a
-            href="../assets/Francisco Santamaría.pdf"
+            href="../assets/Curriculum Francisco Santamaria.pdf"
             download="Francisco Santamaría.pdf"
           >
             {langState.cvButton}
