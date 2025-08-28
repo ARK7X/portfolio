@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Hitmarker Condensed Black';
+    src: url(../fonts/HitmarkerCondensed-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmaker Text Regular';
+    src: url(../fonts/HitmarkerText-Regular.ttf);
+}
+
+.container h2 {
+    margin-top: 60px;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Hitmarker Condensed Black', Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+}
+
+.visualHeadTitle {
+    background-image: url('../assets/TitleTextures_Gray.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.visualHeadTitle::after {
+    content: '';
+    display: block;
+    right: 0;
+    top: 2px;
+    height: auto;
+    background: url(../assets/Redaction_Gray_Long.png) center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-block: 8px;
+
+}
+
+.container h3 {
+    font-family: 'Hitmarker Text Regular', Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: .5px;
+}
+
+.skills-box {
+    margin-bottom: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.skills-box h3{
+ margin-top: 25px;
+ margin-bottom: 25px;
+}
+
+.frontEnd-tech img{
+    margin-right: 25px;
+    width: 70px;
+    height: 70px;
+}
+
+.frameworks-tech img{
+    margin-right: 25px;
+    width: 70px;
+    height: 70px;
+}
+
+.backEnd-tech img{
+    margin-right: 25px;
+    width: 70px;
+    height: 70px;
+}
+
+.skills-box img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+

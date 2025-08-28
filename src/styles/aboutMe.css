@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Hitmarker Condensed Black';
+    src: url(../fonts/HitmarkerCondensed-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmaker Text Regular';
+    src: url(../fonts/HitmarkerText-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmarker Text Bold';
+    src: url(../fonts/HitmarkerText-Bold.ttf);
+}
+
+.container .aboutMe-content h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Hitmarker Condensed Black', Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+}
+
+h2 .visualHeadTitle {
+    background-image: url('../assets/TitleTextures_Gray.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+h2 .visualHeadTitle::after {
+    content: '';
+    display: block;
+    right: 0;
+    top: 2px;
+    height: auto;
+    background: url(../assets/Redaction_Gray_Long.png) center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-block: 8px;
+
+}
+
+.aboutMe-content p {
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.container p {
+    font-family: 'Hitmarker Text Regular', Arial;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}

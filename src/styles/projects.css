@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Hitmarker Condensed Black';
+    src: url(../fonts/HitmarkerCondensed-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmaker Text Regular';
+    src: url(../fonts/HitmarkerText-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmarker Text Bold';
+    src: url(../fonts/HitmarkerText-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmarker Text Medium';
+    src: url(../fonts/HitmarkerText-Medium.ttf);
+}
+
+.container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Hitmarker Condensed Black', Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+}
+
+.visualHeadTitle-project {
+    padding-top: 20px;
+    background-image: url('../assets/TitleTextures_White.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #fff;
+}
+
+.visualHeadTitle-project::after {
+    content: '';
+    display: block;
+    right: 0;
+    top: 2px;
+    height: auto;
+    background: url('../assets/pre-order-texture-left.png') center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-block: 8px;
+
+}
+
+.title-project {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #000;
+    padding-bottom: 0.5px;
+}
+
+.card-content {
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background: #000;
+    padding-bottom: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card {
+    background: #1B1B1B;
+    border: 1px solid #837d72;
+}
+
+.card {
+    display: flex;
+    margin-top: 25px;
+    width: 18em;
+}
+
+.card .graphics .bg {
+    overflow: hidden;
+}
+
+.card .graphics .bg img {
+    transition: transform 0.5s ease;
+}
+
+.card .graphics .bg img:hover {
+    transform: scale(1.05);
+}
+
+
+.card-body {
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between
+}
+
+.card-body a{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.info-container {
+    margin-bottom: 15px;
+}
+
+.tag-container .tech-tag {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.tag-container .tech-tag small {
+    font-family: "Hitmarker Text Medium";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.69rem;
+    line-height: 0.63rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #9c978f;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    background-color: #1B1B1B;
+    color: #9c978f;
+}
+
+.container h5 {
+    font-family: 'Hitmarker Text Bold', Arial;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #f3f4f5;
+}
+
+.container .card-body p {
+    font-family: 'Hitmarker Text Regular', Arial;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size:1.5vh;
+    margin-top: 20px;
+    color: #f3f4f5;
+}
+
+.card a {
+    margin: 10px 0px 10px 0px;
+    font-family: 'Hitmarker Text Bold';
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 1;
+    background: #f96800;
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    letter-spacing: .8px;
+    padding: 12px 40px 12px 40px;
+    box-shadow: 0px 4px 8px 0px #000000CC;
+}
+
+.card a:hover {
+    background: url(../assets/CerberusBtnAnim.gif);
+}
+
+@media (max-width: 1024px) {
+
+    .card-content {
+        justify-content: center;
+    }
+
+  }

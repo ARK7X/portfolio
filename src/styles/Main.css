@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Hitmarker Condensed Black';
+    src: url(../fonts/HitmarkerCondensed-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmaker Text Regular';
+    src: url(../fonts/HitmarkerText-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Hitmarker Text Bold';
+    src: url(../fonts/HitmarkerText-Bold.ttf);
+}
+
+.container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Hitmarker Condensed Black', Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+}
+
+.visualHeadTitle {
+    background-image: url('../assets/TitleTextures_Gray.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.visualHeadTitle::after {
+    content: '';
+    display: block;
+    right: 0;
+    top: 2px;
+    height: auto;
+    background: url(../assets/Redaction_Gray_Long.png) center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-block: 8px;
+
+}
+
+.content-box {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 60px;
+}
+
+.content-box img {
+    width: 400px;
+    /*clip-path: circle(40%);*/
+}
+
+.content-info {
+    margin: 5vw 1px 1px 1vw;
+}
+
+.cv-button a {
+    margin: 10px 25vw 10px 0px;
+    font-family: 'Hitmarker Text Bold';
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 1;
+    background: #f96800;
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    letter-spacing: .8px;
+    padding: 12px 40px 12px 40px;
+    box-shadow: 0px 4px 8px 0px #000000CC;
+}
+
+.cv-button a:hover {
+    background: url(../assets/CerberusBtnAnim.gif);
+}
+
+.network-buttons {
+    padding-top: 15px;
+}
+
+.network-buttons a{
+    margin-right: 45px;
+}
+
+.network-buttons a .imgLogo {
+    width: 35px;
+    height: 35px;
+}
+
+.network-buttons a .imgLogo:hover {
+    transform: scale(1.3);
+    transition: all 0.2s ease-out;
+}
+
+.content-info p {
+    font-family: 'Hitmarker Text Regular', Arial;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+
+    .content-box {
+        justify-content: center;
+    }
+
+    .content-box img {
+        width: 350px;
+        /*clip-path: circle(40%);*/
+    }
+
+    .content-box {
+        flex-flow: row wrap;
+    }
+  }
